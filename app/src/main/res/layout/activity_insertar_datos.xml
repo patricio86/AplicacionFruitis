@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D030"
+    android:orientation="vertical"
+    tools:context=".InsertarDatos">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Form fruit:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editnombre"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:freezesText="true"/>
+
+    <EditText
+        android:id="@+id/editweight"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editnombre"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:freezesText="true"/>
+
+    <Spinner
+        android:id="@+id/listaestado"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editnombre"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/editweight" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@id/add"
+        android:layout_toRightOf="@id/listaestado"
+        android:text="Rotten" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/editweight"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="ADD"
+        android:textSize="12sp"
+        android:onClick="insertar"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Search fruits:"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/getall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/textView5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="10dp"
+        android:text=" Get All"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/getlast"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/textView5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/getall"
+        android:text="Get last"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/getnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/textView5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/getlast"
+        android:text="Get by nombre"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/selectnombre"
+        android:layout_width="686dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/getall"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
